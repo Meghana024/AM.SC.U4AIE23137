@@ -11,22 +11,22 @@ function App(){
 
 const notifications=[
 {
-id:1,
-message:"New assignment uploaded",
-type:"info",
-status:"unread"
+ID:"d146095a-0d86-4a34-9e69-3900a14576bc",
+Type:"Result",
+Message:"mid-sem",
+Timestamp:"2026-04-22 17:51:30"
 },
 {
-id:2,
-message:"Server maintenance tonight",
-type:"warning",
-status:"read"
+ID:"b283218f-ea5a-4b7c-93a9-1f2f240d64b0",
+Type:"Placement",
+Message:"CSX Corporation hiring",
+Timestamp:"2026-04-22 17:51:18"
 },
 {
-id:3,
-message:"Meeting scheduled at 4 PM",
-type:"alert",
-status:"unread"
+ID:"81589ada-0ad3-4f77-9554-f52fb558e09d",
+Type:"Event",
+Message:"farewell",
+Timestamp:"2026-04-22 17:51:06"
 }
 ]
 
@@ -41,22 +41,22 @@ return(
 notifications.map((item)=>(
 
 <Card
-key={item.id}
+key={item.ID}
 sx={{marginBottom:"20px"}}
 >
 
 <CardContent>
 
 <Typography variant="h6">
-{item.message}
+{item.Message}
 </Typography>
 
 <Typography>
-Type: {item.type}
+Type: {item.Type}
 </Typography>
 
 <Typography>
-Status: {item.status}
+Time: {item.Timestamp}
 </Typography>
 
 <Button
